@@ -5,14 +5,15 @@
     --roxo-Claro: #dea0fa;
     --cinza-Escuro: #232426;
     --roxo: #d12cff;
-    --branco: #f4f4f4;
+    --branco: #e8e8e8;
     /* Light & Dark */
     --cinza-Claro: #F1F1F1;
     --cinza: #55595d;
     --preto-Inter: #08100C;
 }
 body{
-    background: linear-gradient(100deg, var(--cinza-Escuro), #515151);
+    font-family: "Playwrite IT Moderna", serif;
+    background: linear-gradient(285deg, #141414 0%, #363636 100%);
     height: 100vh;
     overflow-y: hidden;
 }
@@ -34,6 +35,10 @@ body{
     background: linear-gradient(100deg, var(--cinza-Escuro), var(--roxo));
     border-radius: 100%;
     border: 1px solid var(--roxo-Claro);
+    cursor: pointer;
+}
+.standard-theme:hover{
+    opacity: 0.6;
 }
 .light-theme{
     width: 40px;
@@ -41,6 +46,11 @@ body{
     background: linear-gradient(100deg, var(--cinza-Claro), var(--branco));
     border-radius: 100%;
     border: 1px solid var(--roxo-Claro);
+    cursor: pointer;
+    transition: 0.3s background ease-in-out;
+}
+.light-theme:hover{
+   opacity: 0.8;
 }
 .darker-theme{
     width: 40px;
@@ -48,9 +58,12 @@ body{
     background: linear-gradient(100deg, var(--cinza-Escuro), var(--preto-Inter));
     border-radius: 100%;
     border: 1px solid var(--roxo-Claro);
+    cursor: pointer;
 }
-.header h1{
-    font-family: "Playwrite IT Moderna", serif;
+.darker-theme:hover{
+    opacity: 0.5;
+}
+.task-title{
     color: var(--roxo);
     font-size: 60px;
 }
@@ -58,19 +71,30 @@ body{
     display: flex;
     align-items: center;
 }
-.container-task input{
+.task-input{
     background-color: var(--roxo-Claro);
     padding: 11px;
     border-radius: 8px 0 0 8px;
 }
-.container-task input::placeholder{
+.task-input::placeholder{
     font-family: "Playwrite IT Moderna", serif;
 }
-.container-task button{
+.task-button{
     font-family: "Playwrite IT Moderna", serif;
     background-color: var(--roxo);
     padding: 8px;
     border: none;
     border-radius: 0 8px 8px 0;
     color: var(--branco);
+}
+.task-list{
+    list-style: none;
+    color: #e8e8e8;
+}
+.checked{
+    text-decoration: line-through;
+    color:#55595d;
+}
+.remove{
+    
 }
