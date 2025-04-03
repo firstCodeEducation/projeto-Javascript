@@ -11,25 +11,29 @@
     --cinza: #55595d;
     --preto-Inter: #08100C;
 }
-body{
+
+body {
     font-family: "Playwrite IT Moderna", serif;
     background: linear-gradient(285deg, #141414 0%, #363636 100%);
     height: 100vh;
     overflow-y: hidden;
 }
-.header{
+
+.header {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.flexrow-container{
+
+.flexrow-container {
     display: flex;
     justify-content: flex-end;
     width: 100%;
     gap: 8px;
     margin: 16px 32px 0 0;
 }
-.standard-theme{
+
+.standard-theme {
     width: 40px;
     height: 40px;
     background: linear-gradient(100deg, var(--cinza-Escuro), var(--roxo));
@@ -37,10 +41,12 @@ body{
     border: 1px solid var(--roxo-Claro);
     cursor: pointer;
 }
-.standard-theme:hover{
+
+.standard-theme:hover {
     opacity: 0.6;
 }
-.light-theme{
+
+.light-theme {
     width: 40px;
     height: 40px;
     background: linear-gradient(100deg, var(--cinza-Claro), var(--branco));
@@ -49,10 +55,12 @@ body{
     cursor: pointer;
     transition: 0.3s background ease-in-out;
 }
-.light-theme:hover{
-   opacity: 0.8;
+
+.light-theme:hover {
+    opacity: 0.8;
 }
-.darker-theme{
+
+.darker-theme {
     width: 40px;
     height: 40px;
     background: linear-gradient(100deg, var(--cinza-Escuro), var(--preto-Inter));
@@ -60,26 +68,32 @@ body{
     border: 1px solid var(--roxo-Claro);
     cursor: pointer;
 }
-.darker-theme:hover{
+
+.darker-theme:hover {
     opacity: 0.5;
 }
-.task-title{
+
+.task-title {
     color: var(--roxo);
     font-size: 60px;
 }
-.container-task{
+
+.container-task {
     display: flex;
     align-items: center;
 }
-.task-input{
+
+.task-input {
     background-color: var(--roxo-Claro);
     padding: 11px;
     border-radius: 8px 0 0 8px;
 }
-.task-input::placeholder{
+
+.task-input::placeholder {
     font-family: "Playwrite IT Moderna", serif;
 }
-.task-button{
+
+.task-button {
     font-family: "Playwrite IT Moderna", serif;
     background-color: var(--roxo);
     padding: 8px;
@@ -87,14 +101,13 @@ body{
     border-radius: 0 8px 8px 0;
     color: var(--branco);
 }
-.task-list{
+
+.task-list {
     list-style: none;
     color: #e8e8e8;
 }
-.checked{
+
+.checked {
     text-decoration: line-through;
-    color:#55595d;
-}
-.remove{
-    
+    color: #55595d;
 }
